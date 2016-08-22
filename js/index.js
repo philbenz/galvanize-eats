@@ -4,6 +4,4 @@ $(document).on('ready', function() {
 
     //sanity check
     console.log('sanity check with galvanize eats index!');
-
-  }
-);
+});
