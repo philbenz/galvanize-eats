@@ -10,55 +10,57 @@
     <header>
       Galvanize Eats
     </header>
-    <form>
-      <div class="menuList">
-        <select size="4" id="foodChoices">
-          <option id="Hamburgers" value="Hamburger" disabled>Hamburgers</option>
-          <option id="Pizzas" value="Pizzas" disabled>Pizzas</option>
-        </select>
+      <div class="container">
+      <div class="box">
+        <form>
+          <div class="menuList">
+            <select size="4" id="foodChoices">
+              <option id="Hamburgers" value="Hamburger" disabled>Hamburgers</option>
+              <option id="Pizzas" value="Pizzas" disabled>Pizzas</option>
+            </select>
+          </div>
+          <div class="quantityField">
+            <label for="quantity">Quantity</label>
+            <input type="text" name="quantity" id="quantity">
+          </div>
+          <div class="itemButton">
+              <input type="button" id="addItemButton" value="Add Item">
+          </div>
+          <div class="customerName">
+            <label for="custName">Name</label>
+            <input type="text" name="custName" id="custName">
+          </div>
+          <div class="customerPhone">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="custPhone">
+          </div>
+          <div class="customerAddress">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="custAddress">
+          </div>
+          <div class="submitOrderButton">
+              <input type="button" id="submitOrderButton" value="Deliver It!">
+          </div>
+        </form>
       </div>
-      <div class="quantityField">
-        <label for="quantity">Quantity</label>
-        <input type="number" name="quantity" id="quantity">
+      <div class="box">
+        <div class="orderListBox">
+          <textarea name="orderSummaryList" cols="50" rows="20" class="orderSummary"></textarea>
+        </div>
+        <div id="orderTotals-box">
+          <label for="subAmount" id="subTotalLabel">Subtotal: </p>
+          <p id="subAmount"></p>
+          <label id="taxLabel" for="taxAmount">Tax: </p>
+          <p id="taxAmount"></p>
+          <label id="totalAmountLabel" for="totalAmount">Total: </p>
+          <p id="totalAmount"></p>
+        </div>
       </div>
-      <div class="itemButton">
-          <input type="button" id="addItemButton" value="Add Item">
-      </div>
-      <div class="customerName">
-        <label for="custName">Name</label>
-        <input type="text" name="custName" id="custName">
-      </div>
-      <div class="customerPhone">
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="custPhone">
-      </div>
-      <div class="customerAddress">
-        <label for="address">Address</label>
-        <input type="text" name="address" id="custAddress">
-      </div>
-      <div class="submitOrderButton">
-          <input type="button" class="submitOrderButton" value="Deliver It!">
-      </div>
-      <div class="orderList">
-        <select size="15" id="orderSummary">
-
-        </select>
-      </div>
-      <div class="orderTotals">
-        <label for="subAmount" id="subTotalLabel">Subtotal: </p>
-        <p id="subAmount"></p>
-        <label id="taxLabel" for="taxAmount">Tax: </p>
-        <p id="taxAmount"></p>
-        <label id="totalAmountLabel" for="totalAmount">Total: </p>
-        <p id="totalAmount"></p>
-      </div>
-    </form>
+    </div>
     <footer>
-      <div>
-        <p> &copy; Galvanize</p>
-        <p> insert fleur de lis here </p>
-        <p> Denver, Co </p>
-      </div>
+        <span> &copy; Galvanize</span>
+        <span> insert fleur de lis here </span>
+        <span> Denver, Co </span>
     </footer>
     </div>
     <!-- scripts -->

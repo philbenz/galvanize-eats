@@ -38,7 +38,7 @@ $(document).on('ready', function() {
       $('#orderSummary').append('<option>' + $( "#foodChoices option:selected" ).text() + '</option>');
 
       //set order totals
-      subtotal = $( '#subAmount' ).val() + ();
+      subtotal = $( '#subAmount' ).val();
       $( '#subAmount' ).text('');
 
       //set quantity field to 0!
