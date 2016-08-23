@@ -46,7 +46,7 @@ $(document).on('ready', function() {
         $('#orderSummary').append("<option disabled>" + $( "#foodChoices option:selected" ).text() + '</option>');
 
 
-        //if you've ever drive by a hogfarm - this is what my code would smell like - but this is what happens when there's a deadline of 1 day
+        //if you've ever driven by a hogfarm - this is what my code would smell like - but this is what happens when there's a deadline of 1 day
         var str = $( "#foodChoices option:selected" ).text();
         var search = str.search(/\d/)
 
